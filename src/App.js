@@ -8,6 +8,10 @@ import Topbar from './Topbar.js';
 import Dashboard from './Dashboard.js';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import User from './user.js';
+import Createuser from './createuser.js';
+import Viewuser from './Viewuser.js';
+import Edituser from './Edituser.js';
+import Editprofile from './Editprofile.js';
 function App() {
 
   return (
@@ -20,6 +24,10 @@ function App() {
     <Routes>
         <Route path='/Dashboard' element={<Dashboard/>}></Route>
         <Route path='/user' element={<User/>}></Route>
+        <Route path='/Create_User' element={<Createuser/>}></Route>
+        <Route path='/user/:id' element={<Viewuser/>}></Route>
+        <Route path='/Edituser/:id' element={<Edituser/>}></Route>
+        <Route path='/Editprofile/:id' element={<Editprofile/>}></Route>
       </Routes>
     </div>
     </div>
